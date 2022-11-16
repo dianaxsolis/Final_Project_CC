@@ -1,0 +1,27 @@
+making my own backgrounds to simplify the mechanics - creating the characters as objects
+
+using collages instead of having to coding everything by myself
+
+ladyk notes:
+
+work with found images and scan them - p5 play library
+
+	- focus on whats happening when rather than focusing when its happening
+
+	- barnes and nobles collage, impose these collages
+
+	- getting those things with the p5 library, choose whether you want to do 1 or 2
+
+- you can add program things above
+
+- checkpoints : shade are off it , playing with the opacity and stuff
+
+- question: what are tasks?
+
+- cone: online game - random stuff - kinda interesting
+
+- if you go with 1 or 3, there's a hint of narrative - encourage how much of the narrative you want to get into - how deep you want to get out
+
+- flesh out the tasks you want people to do
+
+- milestone: get started with the p5.play and scanning the objects into the game
