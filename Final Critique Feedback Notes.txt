@@ -1,0 +1,6 @@
+- make the background a sink
+- make sparkles and all of that to make it look clean
+- have an icon that visualizes how loud ur speaking - like a speaker icon that shows the louder u are - can be good for audio visualization
+- additional task: a scrub brush with bubbles - you have to tell it to go around ("to the left") - very persistent - dirt that makes it really get into it
+- vacuuming - a certain word can make it do something - makes it do a particular cleaning task 
+- love the idea - work on getting the seeds to finish and flip to the next one - boolean can trigger the next scene
