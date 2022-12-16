@@ -4,3 +4,9 @@
 - additional task: a scrub brush with bubbles - you have to tell it to go around ("to the left") - very persistent - dirt that makes it really get into it
 - vacuuming - a certain word can make it do something - makes it do a particular cleaning task 
 - love the idea - work on getting the seeds to finish and flip to the next one - boolean can trigger the next scene
+
+
+idea: pull out from code in the first couple of weeks - crosshair - make the crosshair temp illustrate over the plate
+
+do the random in the this.x and this.y
+

@@ -36,7 +36,7 @@ function preload(){ // Loads images and other necessary items
 	hugIllustration = loadImage('data/Instructions_Illustration.png');
 	taskOneDishes = loadImage ('data/TaskOne_Screen_FinalProject.png');
 	
-	corefont = loadFont('data/Core Gungseo W01 Regular.ttf');
+	corefont = loadFont('data/TitleFont/Core Gungseo W01 Regular/Core Gungseo W01 Regular.ttf');
 
 	backgroundmusic = loadSound ('data/PerdonMadrecita.mp4');
 	backgroundmusic.setVolume(0.01);
