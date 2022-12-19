@@ -62,35 +62,35 @@ function preload() { // Loads images and other necessary items
 
 	// images
 
-	title = loadImage('TitleScreen_FinalProject_CC.png');
-	hugIllustration = loadImage('Instructions_Illustration.png');
-	taskOneDishes = loadImage('TaskOne_Screen_FinalProject.png');
-	taskTwoTV = loadImage ('TaskTwo_Screen_Final_Project_CC.png');
+	title = loadImage('data/TitleScreen_FinalProject_CC.png');
+	hugIllustration = loadImage('data/Instructions_Illustration.png');
+	taskOneDishes = loadImage('data/TaskOne_Screen_FinalProject.png');
+	taskTwoTV = loadImage ('data/TaskTwo_Screen_Final_Project_CC.png');
 	
-	familyPhoto1 = loadImage ('FamilyPhoto1.JPG');
-	familyPhoto2 = loadImage ('FamilyPhoto3.JPG');
-	familyPhoto3 = loadImage('FamilyPhoto4.JPG');
+	familyPhoto1 = loadImage ('data/FamilyPhoto1.JPG');
+	familyPhoto2 = loadImage ('data/FamilyPhoto3.JPG');
+	familyPhoto3 = loadImage('data/FamilyPhoto4.JPG');
 
-	star = loadAnimation('TransitionScreenStar008.png', // Multiple images at different parts in order to create animation
-		'TransitionScreenStar007.png',
-		'TransitionScreenStar006.png',
-		'TransitionScreenStar005.png',
-		'TransitionScreenStar004.png',
-		'TransitionScreenStar003.png',
-		'TransitionScreenStar002.png',
-		'TransitionScreenStar001.png'
+	star = loadAnimation('data/TransitionScreenStar008.png', // Multiple images at different parts in order to create animation
+		'data/TransitionScreenStar007.png',
+		'data/TransitionScreenStar006.png',
+		'data/TransitionScreenStar005.png',
+		'data/TransitionScreenStar004.png',
+		'data/TransitionScreenStar003.png',
+		'data/TransitionScreenStar002.png',
+		'data/TransitionScreenStar001.png'
 	)
 
 	// fonts
 
-	corefont = loadFont('Core Gungseo W01 Regular.ttf');
-	titlefont = loadFont('Sabrina-vZe7.ttf')
+	corefont = loadFont('data/TitleFont/Core Gungseo W01 Regular/Core Gungseo W01 Regular.ttf');
+	titlefont = loadFont('data/sabrina-font/Sabrina-vZe7.ttf')
 
 	// sound
 
-	backgroundmusic = loadSound('PerdonMadrecita.mp4');
+	backgroundmusic = loadSound('data/PerdonMadrecita.mp4');
 
-	taskDone = loadSound('TransitionScreenAudioEffect.m4a');
+	taskDone = loadSound('data/TransitionScreenAudioEffect.m4a');
 
 }
 
