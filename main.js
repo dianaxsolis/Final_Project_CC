@@ -58,6 +58,13 @@ var family2Y = 0;
 var family3X = 0;
 var family3Y = 0;
 
+let topbottomX = 530; // crosshair coordinates for the array to work on the plate only
+let topY = 65;
+let bottomY = 730;
+let leftX = 290;
+let rightX= 850; 
+let leftRightY = 390;
+
 function preload() { // Loads images and other necessary items
 
 	// images
@@ -74,7 +81,7 @@ function preload() { // Loads images and other necessary items
 	star = loadAnimation('data/TransitionScreenStar008.png', // Multiple images at different parts in order to create animation
 		'data/TransitionScreenStar007.png',
 		'data/TransitionScreenStar006.png',
-		'data/TransitionScreenStar005.png',
+		'data/ransitionScreenStar005.png',
 		'data/TransitionScreenStar004.png',
 		'data/TransitionScreenStar003.png',
 		'data/TransitionScreenStar002.png',
@@ -94,7 +101,9 @@ function preload() { // Loads images and other necessary items
 
 }
 
-function mouseDragged(){
+function mouseDragged(){ // tried doing a similar method to sketch 4 with the point and click of the images
+	// for some reason, the first image would disappear and it would only work with the last image
+	
 	if ((mouseX > family1X - 300) && (mouseX < family1X + 300)) {
 		if ((mouseY > family1Y - 300) && (mouseY < family1Y + 300)) {
 			family1X = mouseX;
@@ -126,9 +135,11 @@ function setup() {
 	mic.start();
 
 	// creates germ particles
-
-	for (var i = 0; i < 100; i++) {
-		yuck[i] = new Yuck();
+	
+	if (topbottomX || topY || bottomY){ // tried reducing the array to certain coordinates but i couldnt figure out how to get the code to work
+		for (var i = 0; i < 100; i++) {
+			yuck[i] = new Yuck();
+	}
 	}
 }
 
@@ -194,10 +205,11 @@ function taskOne() { // scene = 2
 
 	// displays germs array
 
-	for (var i = 0; i < yuck.length; i++) {
-		yuck[i].move();
-		yuck[i].display();
-
+	if (topbottomX || topY || bottomY){ // does not work in reducing the array
+		for (var i = 0; i < yuck.length; i++) {
+			yuck[i].move();
+			yuck[i].display();
+		}
 	}
 
 	var volume = mic.getLevel(); // code inspiration drawn heavily from class example - https://openprocessing.org/sketch/795988
@@ -228,6 +240,12 @@ function taskTwo() { // scene = 3
 	
 	image(familyPhoto1, family1X, family1Y, width/8, height/8);
 	image(familyPhoto2, family2X, family2Y, width/8, height/8);
+	
+	// task two is not completed: i was working on trying to fix task two but i ran out of time
+	// i had intentions of it being similar to a point and click where based upon the image's coordinate such if the image is located
+	// in the right x and y spot, that would trigger the task completed sound
+	// i wanted this to work for all 3 images i imported to where the player had to figure out in what order the images should be placed
+	// that way the image would not work if not placed in the right spot
 	
 
 }
@@ -297,13 +315,14 @@ function keyPressed() {
 	}
 }
 
-/* - allows me to figure out the crosshairs of the plate in task one in order to reduce the array to certain coordinates
+// - allows me to figure out the crosshairs of the plate in task one in order to reduce the array to certain coordinates
 
+/*
 function mousePressed(){
 	
   console.log(mouseX);
 	console.log(mouseY);
 	
 }
-
 */
+
